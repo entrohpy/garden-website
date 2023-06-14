@@ -1,3 +1,3 @@
 [submodule "content"]
 	path = content
-	url = git@github.com:entrohpy/garden-content.git
+	url = https://github.com/entrohpy/garden-content
