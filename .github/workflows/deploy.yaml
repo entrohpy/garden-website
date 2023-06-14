@@ -1,6 +1,9 @@
 name: Deploy to Netlify
 
 on:
+  workflow_dispatch:
+    branches:
+      - hugo
   push:
     branches:
       - hugo
