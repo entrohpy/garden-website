@@ -35,10 +35,9 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: nwtgck/actions-netlify@v2.0
+        uses: jsmrcaga/action-netlify-deploy@v2.0.0
         with:
-          publish-dir: './public'
-        env:
+          build_directory: './public'
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          production-deploy: true
+          NETLIFY_DEPLOY_TO_PROD: true
